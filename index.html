@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Coronavirus Visual Analytics</title>
+
+    <link rel="stylesheet" href="./style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <link rel="stylesheet" href="./style/sidebar.css" type="text/css">
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/echarts-gl.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Convert_Pinyin.js"></script>
+
+    <script src="json/world.js"></script>
+    <script src="json/china.js"></script>
+
+    <script src="./script/infectious_map_world.js" type="module"></script>
+    <script src="./script/infectious_map_euro.js" type="module"></script>
+    <script src="./script/infectious_map_china.js" type="module"></script>
+    <script src="./script/airlines_to_beijing_sankey.js" type="module"></script>
+    <script src="./script/airlines_to_bj_pie.js" type="module"></script>
+    <script src="./script/resumption_map_china.js" type="module"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        #mainNavbar {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#mainNavbar" data-offset="50">
+
+<nav id="mainNavbar" class="sidebar bg-dark fixed-top">
+    <ul class="navbar-nav nav-tabs nav-stacked">
+        <li class="nav-item">
+            <a class="nav-link ml-2 my-2 text_color" href="#section2"><h5>Outbreak Severity</h5></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ml-2 my-2 text_color" href="#section3"><h5>Airlines Analytic</h5></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ml-2 my-2 text_color" href="#section4"><h5>Economic Recovery</h5></a>
+            <!--            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">-->
+            <!--                Section 4-->
+            <!--            </a>-->
+            <!--            <div class="dropdown-menu">-->
+            <!--                <a class="dropdown-item" href="#section41">Link 1</a>-->
+            <!--                <a class="dropdown-item" href="#section42">Link 2</a>-->
+            <!--            </div>-->
+        </li>
+    </ul>
+    <div id="wrapper_authorization"></div>
+    <h6 class="author_color">by: Rongchen Guo</h6>
+</nav>
+
+
+<div id="section2" class="wrapper_all">
+    <div id="wrapper_left_6">
+        <div class="row_split">
+            <div class="top_statement1">
+                <b>Outbreak severity of coronavirus COVID-19 in world countries</b>
+            </div>
+            <div id="top_statement2">
+                Cumulative incidence within last 14 days of a region is used as its severity.<br>
+                <b>"World Outbreak Severity"</b> displays the severity in world countries;<br>
+                <b>"Outbreak Severity of Europe"</b> displays the severity in European countries;<br>
+                <b>"Outbreak Severity of China"</b> displays the provincial cumulative confirmed cases in China.
+            </div>
+            <div id="bottom_views">
+                <div class="col_split">
+                    <div class="outlined">
+                        <div class="view_title">Predicted & Actual Cumulative Confirmed Cases</div>
+                        <div id="predict_linechart_svg_area"></div>
+                    </div>
+                </div>
+                <div class="col_split">
+                    <div class="outlined">
+                        <div class="view_title">Predicted Remaining Confirmed Cases</div>
+                        <div id="actual_linechart_svg_area"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">World Outbreak Severity</div>
+                <div id="infectious_world_map_svg_area"></div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper_right_4">
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">Outbreak Severity of China</div>
+                <div id="infectious_china_map_svg_area"></div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">Outbreak Severity of Europe</div>
+                <div id="infectious_euro_map_svg_area"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section3" class="wrapper_all">
+    <div class="col_split">
+        <div class="row_split">
+            <div class="top_statement1">
+                <b>Statistical analysis of airlines to PEK during COVID-19 outbreaks</b>
+            </div>
+            <div id="top_statement3">
+                Aircraft during Mar 16th ~ Mar 21st landing at PEK is considered.<br>
+                Direct flight and connecting flights are separately analyzed.
+            </div>
+            <div id="bottom_views2">
+                <div class="outlined">
+                    <div class="view_title">Overview of Airlines to Beijing, China</div>
+                    <div id="airline_overview_pie_svg_area"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">Airlines to Beijing (One Transfer)</div>
+                <div id="one_trans_sankey_svg_area"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col_split">
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">Airlines to Beijing (Direct Flight)</div>
+                <div id="zero_trans_sankey_svg_area"></div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">Airlines to Beijing (Two Transfers)</div>
+                <div id="two_trans_sankey_svg_area"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section4" class="wrapper_all_more">
+    <div id="wrapper_left_4">
+        <div class="row_split">
+            <div class="top_statement1">
+                <b>Analytic of economic recovery in China</b>
+            </div>
+            <div id="top_statement4">
+                Economy recovery is measured based on:<br>
+                1) work resumption rate<br>
+                2) labor absence proportion<br><br>
+                <b>"China Labor Resumption Rate"</b> displays the work resumption rate over time.<br>
+                <b>"China Labor Absence Rate"</b> displays the labor absence proportion over time.<br>
+                <b>"Population Inflow Ranking"</b> & <b>"Population Outflow Ranking"</b> displays cities with top
+                population inflow & outflow.
+            </div>
+            <div id="bottom_views3">
+                <div class="outlined">
+                    <div class="view_title">GDP-Weighted National Work Resumption Index</div>
+                    <div id="resumption_bottom_card_svg_area"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="row_split">
+                <div class="outlined">
+                    <div class="view_title">GDP-Weighted National Labor Shortage Index</div>
+                    <div id="shortage_bottom_card_svg_area"></div>
+                </div>
+            </div>
+            <div class="row_split">
+                <div class="col_split">
+                    <div class="outlined">
+                        <div class="view_title">Population Inflow Ranking</div>
+                        <div id="resumption_left_card_svg_area"></div>
+                    </div>
+                </div>
+                <div class="col_split">
+                    <div class="outlined">
+                        <div class="view_title">Population Outflow Ranking</div>
+                        <div id="resumption_right_card_svg_area"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper_right_6">
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">China Labor Resumption Rate</div>
+                <div id="resumption_map_svg_area"></div>
+            </div>
+        </div>
+        <div class="row_split">
+            <div class="outlined">
+                <div class="view_title">China Labor Absence Rate</div>
+                <div id="shortage_map_svg_area"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

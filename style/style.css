@@ -1,0 +1,317 @@
+html, body {
+  overflow: visible;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  width: 99.5%;
+  height: 100%;
+  color: #555555;
+  /*background: url("../images/background.jpg") repeat;*/
+  /*color: #000000;*/
+}
+
+text {
+  fill: #555555;
+}
+
+input {
+  color: #555555;
+}
+
+.sidebar {
+  float: left;
+  position: relative;
+  width: 12%;
+  height: 100%;
+}
+
+.wrapper_all {
+  float: right;
+  position: relative;
+  width: 87%;
+  height: 100%;
+}
+
+.wrapper_all_more {
+  float: right;
+  position: relative;
+  width: 87%;
+  height: 150%;
+}
+
+#wrapper_left {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+
+#wrapper_middle {
+  float: left;
+  position: relative;
+  width: 68%;
+  height: 100%;
+}
+
+#wrapper_right {
+  float: left;
+  position: relative;
+  width: 12%;
+  height: 100%;
+}
+
+#wrapper_authorization {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 75%;
+}
+
+.row_split {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.col_split {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.outlined {
+  width: 100%;
+  height: 100%;
+  outline: 1px solid #DDDDDD;
+  outline-offset: -5px;
+  /*margin-top: 20%;*/
+}
+
+.view_title {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 6px;
+  font-size: 10px;
+  color: #FFFFFF;
+  background-color: #52617B;
+}
+
+.top_statement1 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 10%;
+
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+#top_statement2 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 30%;
+
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+#top_statement3 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 20%;
+
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+#top_statement4 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 40%;
+
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+#bottom_views {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+#bottom_views2 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+#bottom_views3 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+#wrapper_left_6 {
+  float: left;
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+#wrapper_right_4 {
+  float: left;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+#wrapper_left_4 {
+  float: left;
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+
+#wrapper_right_6 {
+  float: left;
+  position: relative;
+  width: 55%;
+  height: 100%;
+}
+
+#wrapper_top_6 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+#wrapper_bottom_4 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+
+#wrapper_top_7 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+#wrapper_bottom_3 {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+
+
+.text_color {
+  color: #ffff00;
+}
+
+.author_color {
+  color: #ffffff;
+  text-align: right;
+  padding-right: 5px;
+}
+
+#infectious_world_map_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#infectious_euro_map_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#infectious_china_map_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#all_trans_sankey_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#airline_overview_pie_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#one_trans_sankey_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#two_trans_sankey_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#zero_trans_sankey_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#resumption_map_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#shortage_map_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#resumption_left_card_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#resumption_right_card_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#resumption_bottom_card_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#shortage_bottom_card_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#predict_linechart_svg_area {
+  width: 100%;
+  height: 100%;
+}
+
+#actual_linechart_svg_area {
+  width: 100%;
+  height: 100%;
+}

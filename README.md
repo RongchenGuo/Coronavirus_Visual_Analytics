@@ -16,11 +16,11 @@ The system consists of three parts:
 
 Cumulative incidence within last 14 days of certain region is used as its severity.
 
-**"World Outbreak Severity"** displays the outbreak severity in world countries;
+>> **"World Outbreak Severity"** displays the outbreak severity in world countries;
 
-**"Outbreak Severity of Europe"** displays the outbreak severity in European countries;
+>> **"Outbreak Severity of Europe"** displays the outbreak severity in European countries;
 
-**"Outbreak Severity of China"** displays the outbreak severity in Chinese provinces. 'cumulative confirmed cases' is used as the outbreak severity, instead of cumulative incidence.
+>> **"Outbreak Severity of China"** displays the outbreak severity in Chinese provinces. 'cumulative confirmed cases' is used as the outbreak severity, instead of cumulative incidence.
 
 **"Predicted & Actual Cumulative Confirmed Cases"** displays the country/ province's predicted and actual cumulative confirmed cases across time. This view will change accordingly when users click on a certain country/ province in the map.
 

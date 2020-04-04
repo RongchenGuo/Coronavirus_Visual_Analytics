@@ -28,8 +28,8 @@ function displayWorldInfectiousMap() {
             itemHeight: 100,
             left: '5px',
             bottom: '1px',
-            min: -0.1, //0.3,
-            max: 1.1, //1.9,
+            min: 0.3, //0.3,
+            max: 2.65, //1.9,
             precision: 1,
             inRange: {
                 color: ['#ffffff', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']

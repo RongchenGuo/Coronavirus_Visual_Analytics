@@ -80,6 +80,13 @@ input {
   height: 50%;
 }
 
+.row_split_third {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 33.33%;
+}
+
 .col_split {
   float: left;
   position: relative;

@@ -58,7 +58,7 @@ function displayEuroInfectiousMap() {
             // },
             series: [
                 {
-                    name: 'Outbreak Severity',
+                    name: 'Cumulative Incidence Rate',
                     // label: {
                     //     show: true
                     // },

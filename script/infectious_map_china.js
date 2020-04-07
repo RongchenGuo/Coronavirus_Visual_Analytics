@@ -33,7 +33,7 @@ function displayChinaInfectiousMap() {
 
 function parseChinaInfectiousList () {
     return chinaInfectiousList.map(function (item) {
-        return {"name": item.name, "value": item.value.infect};
+        return {"name": item.name, "value": item.value.R0};
     });
 }
 
@@ -48,7 +48,7 @@ function getMapOption(dataList) {
                     return
                 }
                 if (params.data.value) {
-                    return nameMap[params.name] + "<br />" + "Cumulative confirmed cases" + " : " + params.data.value;
+                    return nameMap[params.name] + "<br />" + "Outbreak Severity" + " : " + params.data.value;
                 } else {
                     return nameMap[params.name] + "Data missing";
                 }
@@ -61,7 +61,7 @@ function getMapOption(dataList) {
                 right: '1px',
                 bottom: '1px',
                 min: 0, //0.3,
-                max: 400, //1.9,
+                max: 1, //1.9,
                 precision: 1,
                 inRange: {
                     color: ['#ffffff', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']

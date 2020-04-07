@@ -54,7 +54,7 @@ function displayWorldInfectiousMap() {
         // backgroundColor: '#6495ED',
         series: [
             {
-                name: 'Outbreak Severity',
+                name: 'Cumulative Incidence Rate',
                 // label: {
                 //     show: true
                 // },

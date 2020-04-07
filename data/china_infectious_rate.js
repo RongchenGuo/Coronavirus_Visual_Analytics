@@ -1,5 +1,5 @@
 export const chinaInfectiousList = [
-    { "name": "北京", "value": { "infect": 381.0, "R0": 0.343 } },
+    { "name": "北京", "value": { "infect": 381.0, "R0": 0.743 } },
     { "name": "天津", "value": { "infect": 124.0, "R0": 0.359 } },
     { "name": "河北", "value": { "infect": 301.0, "R0": 0.663 } },
     { "name": "山西", "value": { "infect": 129.0, "R0": 0.208 } },
@@ -15,7 +15,7 @@ export const chinaInfectiousList = [
     { "name": "江西", "value": { "infect": 930.0, "R0": 0.282 } },
     { "name": "山东", "value": { "infect": 541.0, "R0": 0.225 } },
     { "name": "河南", "value": { "infect": 1246.0, "R0": 0.335 } },
-    { "name": "湖北", "value": { "infect": 58182.0, "R0": 0.39 } },
+    { "name": "湖北", "value": { "infect": 58182.0, "R0": 0.79 } },
     { "name": "湖南", "value": { "infect": 1006.0, "R0": 0.461 } },
     { "name": "广东", "value": { "infect": 1322.0, "R0": 0.363 } },
     { "name": "广西", "value": { "infect": 238.0, "R0": 0.454 } },
@@ -28,6 +28,6 @@ export const chinaInfectiousList = [
     { "name": "甘肃", "value": { "infect": 91.0, "R0": 0.832 } },
     { "name": "青海", "value": { "infect": 18.0, "R0": 0.374 } },
     { "name": "宁夏", "value": { "infect": 70.0, "R0": 1.122 } },
-    { "name": "新疆", "value": { "infect": 73.0, "R0": 0.0 } },
-    { "name": "西藏", "value": { "infect": 1.0, "R0": 0.0 } }
+    { "name": "新疆", "value": { "infect": 73.0, "R0": 0.1 } },
+    { "name": "西藏", "value": { "infect": 1.0, "R0": 0.1 } }
 ];

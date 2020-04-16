@@ -40,17 +40,17 @@ function displayWorldInfectiousMap() {
             // text: ['1350.0', '0.0'],
             calculable: true
         },
-        // toolbox: {
-        //     show: true,
-        //     //orient: 'vertical',
-        //     left: '25%',
-        //     top: '10%',
-        //     // feature: {
-        //     //     // dataView: {readOnly: false},
-        //     //     // restore: {},
-        //     //     saveAsImage: {pixelRatio: 5}
-        //     // }
-        // },
+        toolbox: {
+            show: true,
+            //orient: 'vertical',
+            left: '5%',
+            top: '5%',
+            feature: {
+                // dataView: {readOnly: false},
+                // restore: {},
+                saveAsImage: {pixelRatio: 5}
+            }
+        },
         // backgroundColor: '#6495ED',
         series: [
             {

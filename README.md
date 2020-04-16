@@ -22,7 +22,7 @@ Cumulative incidence within last 14 days of certain region is used as its severi
 
 > ***Outbreak Severity of China*** displays the outbreak severity in Chinese provinces. 'cumulative confirmed cases' is used as the outbreak severity, instead of cumulative incidence.
 
-> ***Predicted & Actual Cumulative Confirmed Cases*** displays the country/ province's predicted and actual cumulative confirmed cases across time. This view will change accordingly when users click on a certain country/ province in the map.
+> ***Predicted & Actual Cumulative Confirmed Cases*** displays the country/ province's predicted and actual cumulative confirmed cases across time. SUIR model is used as the prediction model. This view will change accordingly when users click on a certain country/ province in the map.
 
 > ***Predicted Remaining Confirmed Cases*** displays the country/ province's predicted remaining confirmed cases across time. Remaining Confirmed Cases are cases to be confirmed in the future, so you can see a decreasing trend.This view will change accordingly when users click on a certain country/ province in the map.
             
